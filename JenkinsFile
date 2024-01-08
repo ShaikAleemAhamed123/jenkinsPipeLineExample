@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run the java file') {
              steps {
-                sh "java Hello"
+                sh "java Hello.java"
                 sh 'echo "Java file ran successfully !'
             }
         }
