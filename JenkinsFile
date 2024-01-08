@@ -1,12 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Compile the java file') {
-            steps {
-                sh "javac Hello.java"
-                sh 'echo "Java file compiled successfully !'
-            }
-        }
         stage('Run the java file') {
              steps {
                 sh "java Hello"
